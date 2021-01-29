@@ -5,7 +5,7 @@ export default class Header extends Component {
     render() {
         return (
             <HeaderWrapper>
-            <h1>THings To Do</h1>
+            <h1>THings o Do</h1>
             </HeaderWrapper>
         )
     }
