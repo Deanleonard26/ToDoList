@@ -2,11 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 export default function Note(props) {
+
+    function handleClick(){
+        props.onDelete(props.id)
+    }
+
     return (
         <NoteSection>
         <NoteWrapper>
             <h3>{props.title}</h3>
             <p>{props.content}</p>
+            <button onClick={handleClick}>DELETE</button>
         </NoteWrapper>
         </NoteSection>
     )
